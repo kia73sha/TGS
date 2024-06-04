@@ -1009,6 +1009,202 @@ about
   color: #777;
 }
 
+/*
+---------------------------------------------
+introduction
+---------------------------------------------
+*/
+
+#introduction {
+  padding: 120px 0px 0px 0px;
+  position: relative;
+  z-index: 9;
+}
+
+#introduction .container {
+  border-bottom: 5px solid #f7f7f7;
+  padding-bottom: 80px;
+}
+
+#introduction .section-heading {
+  margin-bottom: 10px;
+}
+
+#introduction .section-heading h6 {
+  color: #5fb759;
+}
+
+#introduction .service-item {
+  margin-top: 30px;
+}
+
+#introduction .service-item img {
+  float: left;
+  margin-right: 15px;
+  width: 46px;
+  height: 46px;
+}
+
+#introduction .service-item h4 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  line-height: 46px;
+}
+
+#introduction a.main-button-icon {
+  display: inline-block;
+  margin-top: 60px;
+}
+
+#introduction .right-text-content {
+  margin-top: 40px;
+}
+
+#introduction .right-text-content p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #777;
+}
+
+
+  /*
+  ---------------------------------------------
+  benchmark_impl
+  ---------------------------------------------
+  */
+
+#benchmark_impl {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+#benchmark_impl .benchmark_impl-item {
+  margin-bottom: 50px;
+}
+
+.benchmark_impl-item .benchmark_impl-icon {
+  float: left;
+}
+
+#benchmark_impl .benchmark_impl-content {
+  margin-left: 75px;
+}
+
+.benchmark_impl-item .benchmark_impl-content h4 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  margin-bottom: 15px;
+}
+
+.benchmark_impl-item .benchmark_impl-content p {
+  margin-bottom: 15px;
+}
+
+
+
+/*
+ ---------------------------------------------
+ data_extraction
+ ---------------------------------------------
+ */
+
+#introduction {
+  padding: 120px 0px 0px 0px;
+  position: relative;
+  z-index: 9;
+}
+
+#data_extraction .container {
+  border-bottom: 5px solid #f7f7f7;
+  padding-bottom: 80px;
+}
+
+#data_extraction .section-heading {
+  margin-bottom: 10px;
+}
+
+#data_extraction .section-heading h6 {
+  color: #5fb759;
+}
+
+#data_extraction .service-item {
+  margin-top: 30px;
+}
+
+#data_extraction .service-item img {
+  float: left;
+  margin-right: 15px;
+  width: 46px;
+  height: 46px;
+}
+
+#data_extraction .service-item h4 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  line-height: 46px;
+}
+
+#data_extraction a.main-button-icon {
+  display: inline-block;
+  margin-top: 60px;
+}
+
+#data_extraction .right-text-content {
+  margin-top: 40px;
+}
+
+#data_extraction .right-text-content p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #777;
+}
+
+
+
+
+  /*
+  ---------------------------------------------
+  metadata
+  ---------------------------------------------
+  */
+
+#metadata {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+#metadata .metadata-item {
+  margin-bottom: 50px;
+}
+
+.metadata-item .metadata-icon {
+  float: left;
+}
+
+#metadata .metadata-content {
+  margin-left: 75px;
+}
+
+.metadata-item .metadata-content h4 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  margin-bottom: 15px;
+}
+
+.metadata-item .metadata-content p {
+  margin-bottom: 15px;
+}
+
+
+
 
 /*
 ---------------------------------------------

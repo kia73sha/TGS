@@ -52,7 +52,7 @@ https://templatemo.com/tm-543-breezed
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
-                            .BREEZED
+                            TGS
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -106,10 +106,13 @@ https://templatemo.com/tm-543-breezed
             <div class="img-fill">
                 <img src="assets/images/slide-01.jpg" alt="">
                 <div class="text-content">
-                  <h3>Welcome To Breezed</h3>
-                  <h5>New Bootstrap Template</h5>
-                  <a href="#" class="main-stroked-button">Learn More</a>
-                  <a href="#" class="main-filled-button">Get It Now</a>
+                  <h3>Towards Neural Scaling Laws for Foundation Models
+                      on Temporal Graphs</h3>
+                  <h5>Temporal Graph Foundation Model Benchmark</h5>
+                    <a href="https://zenodo.org/records/11455828" class="main-filled-button">Dataset</a>
+                    <a href="https://github.com/benjaminnNgo/ScalingTGNs" class="main-stroked-button">Benchmark Implementation</a>
+                    <a href="https://huggingface.co/api/datasets/ntgbaoo/Temporal_Graph_Scaling_TGS_Benchmark/croissant" class="main-filled-button">Dataset ML Croissant</a>
+
                 </div>
             </div>
           </div>
@@ -145,54 +148,68 @@ https://templatemo.com/tm-543-breezed
     <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
     <!-- ***** Main Banner Area End ***** -->
 
-    <!-- ***** About Area Starts ***** -->
-    <section class="section" id="about">
+    <!-- ***** Introduction Area Starts ***** -->
+    <section class="section" id="introduction">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="left-text-content">
                         <div class="section-heading">
-                            <h6>About Us</h6>
+                            <h6>Introduction</h6>
                             <h2>We work with top brands and startups</h2>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <img src="assets/images/service-item-01.png" alt="">
-                                    <h4>Top Notch</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <img src="assets/images/service-item-01.png" alt="">
-                                    <h4>Robust</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <img src="assets/images/contact-info-03.png" alt="">
-                                    <h4>Reliable</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <img src="assets/images/contact-info-03.png" alt="">
-                                    <h4>Up-to-date</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <a href="#" class="main-button-icon">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
+                       <p>TGS provides the implementation of the TGS foundation model benchmarking and includes links to temporal networks suitable for foundation model training. TGS introduces a training process for foundation models using various real-world temporal networks, enabling prediction on previously unseen networks.</p>
+                        <img src="assets/images/TGS_Logo.png" alt="" style="max-width: 60%;
+                        height: auto; alignment: center; text-align: center; vertical-align: middle;">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="right-text-content">
-                        <p><a rel="nofollow noopener" href="https://templatemo.com/tm-543-breezed" target="_parent">Breezed HTML Template</a> is provided by TemplateMo for absolutely free of charge. You can download, edit and use this for your non-commercial and commercial websites. 
-                        <br><br>Redistributing this template as a downloadable ZIP file on any template collection website is strictly prohibited. You will need to talk to us if you want to redistribute this template. Thank you.
-                      <br><br>This is a Bootstrap v4.3.1 CSS layout. Do you like it? You can feel free to <a rel="nofollow noopener" href="https://templatemo.com/contact" target="_parent">talk to us</a> if you have anything.</p>
+                         <p>
+                             Temporal graph learning focuses on predicting future interactions from evolving network data. Our study addresses whether it's possible to predict the evolution of an unseen network within the same domain using observed temporal graphs.
+                             We introduce the Temporal Graph Scaling (TGS) dataset, comprising 84 ERC20 token transaction networks collected from 2017 to 2023. To evaluate transferability, we pre-train Temporal Graph Neural Networks (TGNNs) on up to 64 token transaction networks and assess their performance on 20 unseen token types.
+                             Our findings reveal that the neural scaling law observed in NLP and Computer Vision also applies to temporal graph learning: pre-training on more networks with more parameters enhances downstream performance. This is the first empirical demonstration of temporal graph transferability. Notably, the largest pre-trained model surpasses fine-tuned TGNNs on unseen test networks, marking a significant step towards building foundation models for temporal graphs. The code and datasets are publicly available.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Introduction Area Ends ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="benchmark_impl">
+        <div class="container">
+
+            <div class="row">
+                <h6>TGS Benchmark</h6>
+                <p style="margin-top: 10px;">transaction networks are divided randomly into train and test sets. The train set is used to train foundation models with different sizes; then, the trained models are evaluated on the test set. </p>
+                <img src="assets/images/FT.png" alt="" style="max-width: 100%;
+                        height: auto; alignment: center; text-align: center;">
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+
+    <!-- ***** About Area Starts ***** -->
+    <section class="section" id="data_extraction">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>TGS Data</h6>
+                            <h2>TGS data preparation has three main steps</h2>
+                        </div>
+                       <p>The TGS dataset extraction includes: (1) Token Extraction: extracting the token transaction network from our P2P Ethereum live node. (2) Discretizing: creating weekly snapshots for the Discretized Temporal Directed Graph (DTDG) setting. (3) Labeling: assigning labels based on network growth; increasing trends are labeled one, decreasing trends are labeled zero.
+                       </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="right-text-content">
+                        <img src="assets/images/Data_Procesing_V2.png" alt="" style="max-width: 100%;
+                        height: auto; alignment: center; text-align: center; vertical-align: middle;">
+
                     </div>
                 </div>
             </div>
@@ -201,351 +218,178 @@ https://templatemo.com/tm-543-breezed
     <!-- ***** About Area Ends ***** -->
 
     <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="features">
+    <section class="section" id="metadata">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <img src="assets/images/features-icon-1.png" alt="">
-                        </div>
-                        <div class="features-content">
-                            <h4>Initial Work</h4>
-                            <p>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis quam. Duis ac condimentum eros.</p>
-                            <a href="#" class="text-button-icon">
-                                Learn More <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <img src="assets/images/features-icon-1.png" alt="">
-                        </div>
-                        <div class="features-content">
-                            <h4>Master Planning</h4>
-                            <p>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis quam. Duis ac condimentum eros.</p>
-                            <a href="#" class="text-button-icon">
-                                Learn More <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <img src="assets/images/features-icon-1.png" alt="">
-                        </div>
-                        <div class="features-content">
-                            <h4>Smooth Execution</h4>
-                            <p>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis quam. Duis ac condimentum eros.</p>
-                            <a href="#" class="text-button-icon">
-                                Learn More <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Big Item End ***** -->
+                <h6>Metadata</h6>
+                <p>
+                    Datasets provided in this storage are introduced in the paper: Towards Neural Scaling Laws for Foundation Models on Temporal Graphs
+                    Each .csv file represents all transactions of the token network that has the same name as the file name (tokenname.csv)
+                    Each transaction corresponds to a row in each file. <br><br></p>
 
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="subscribe">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="section-heading">
-                        <h6>Subscribe Newsletters</h6>
-                        <h2>Don’t miss this chance!</h2>
-                    </div>
-                    <div class="subscribe-content">
-                        <p>Vivamus suscipit blandit nibh, in cursus mi. Proin vel blandit metus, et auctor elit. Vivamus tincidunt tristique convallis. Ut nec odio vel arcu euismod semper nec ac sem.</p>
-                        <div class="subscribe-form">
-                            <form id="subscribe-now" action="" method="get">
-                                <div class="row">
-                                    <div class="col-md-8 col-sm-12">
-                                      <fieldset>
-                                        <input name="email" type="text" id="email" placeholder="Enter your email..." required="">
-                                      </fieldset>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12">
-                                      <fieldset>
-                                        <button type="submit" id="form-submit" class="main-button">Subscribe Now</button>
-                                      </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                <ol>
+                    <li> blockNumber :  is the block ID of Ethereum that includes this transaction</li>
+                    <li>timestamp: time that the transaction is made in UNIX timestamp format</li>
+                    <li>tokenAddress : the address that specifies a unique ERC20 token</li>
+                    <li>from: address of sender</li>
+                    <li>to: address of receiver</li>
+                    <li> value: the amount the transaction</li>
+                    <li>fileBlock: we split the whole number of blocks count to 35 buckets and assigned the bucket ID to the transaction to trace the blocks</li>
+                </ol>
+                <br>
+                <p>
+                    <br><br>
+                Raw .csv will be used to divide into generate edgeslist and label, which indicates all node interactions and labels for each snapshot respectively, with help of functions from TGS_Handler defined in TGS.py inside the TGS package (see the code in the Github repository provided along with this data storage)
+                </p>
+                <pre>
+                    <br>
+                    Data Example:
+
+                    blockNumber,timestamp,tokenAddress,from,to,value,fileBlock
+                    16480746,1674612419,0x5a3e6a77ba2f983ec0d371ea3b475f8bc0811ad5,0x0000000000000000000000000000000000000000,0x0000ba9ff5c97f33bd62c216a56b3d02ae6ac4bb,1E+18,26
+
+                </pre>
             </div>
         </div>
     </section>
     <!-- ***** Features Big Item End ***** -->
 
 
-    <!-- ***** Projects Area Starts ***** -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="section-heading">
-                    <h6>Our Projects</h6>
-                    <h2>Some of our latest projects</h2>
-                </div>
-                <div class="filters">
-                    <ul>
-                        <li class="active" data-filter="*">All</li>
-                        <li data-filter=".des">Web Design</li>
-                        <li data-filter=".dev">Web Development</li>
-                        <li data-filter=".gra">Graphics</li>
-                        <li data-filter=".tsh">Artworks</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-9">
-                <div class="filters-content">
-                    <div class="row grid">
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all des">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-01.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-01.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all dev">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-02.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-02.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all gra">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-03.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-03.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all tsh">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-04.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-04.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all dev">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-05.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-05.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all des">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-06.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-06.jpg" alt=""></a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <!-- ***** Projects Area Ends ***** -->
 
-    <!-- ***** Testimonials Starts ***** -->
-    <section class="section" id="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h6>Digital Team</h6>
-                        <h2>young and talented members</h2>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-01.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.01 White Cheese</h4>
-                            <span>Digital Marketer</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-04.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.02 Snow Mary</h4>
-                            <span>Site Analyst</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-02.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.03 Johnny Egg</h4>
-                            <span>Digital Influencer</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-05.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.04 Catherine Phyu</h4>
-                            <span>Co Founder</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-03.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.05 Shao Lynn</h4>
-                            <span>Chief Marketing</span>
-                        </div>
-                        
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-04.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.06 Emma Honey</h4>
-                            <span>Digital Influencer</span>
-                        </div>
-                        
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-06.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.07 Oliva Sofie</h4>
-                            <span>Website Analyst</span>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Testimonials Ends ***** -->
-    
-    <!-- ***** Contact Us Area Starts ***** -->
-    <section class="section" id="contact-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="left-text-content">
-                        <div class="section-heading">
-                            <h6>Contact Us</h6>
-                            <h2>Feel free to keep in touch with us!</h2>
-                        </div>
-                        <ul class="contact-info">
-                            <li><img src="assets/images/contact-info-01.png" alt="">010-020-0860</li>
-                            <li><img src="assets/images/contact-info-02.png" alt="">info@company.com</li>
-                            <li><img src="assets/images/contact-info-03.png" alt="">www.company.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-8 col-xs-12">
-                    <div class="contact-form">
-                        <form id="contact" action="" method="get">
-                          <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Your Name *" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="phone" type="text" id="phone" placeholder="Your Phone" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="email" id="email" placeholder="Your Email *" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="subject" type="text" id="subject" placeholder="Subject">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button-icon">Send Message Now <i class="fa fa-arrow-right"></i></button>
-                              </fieldset>
-                            </div>
-                          </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Contact Us Area Ends ***** -->
+
+
+
+<!--    &lt;!&ndash; ***** Testimonials Starts ***** &ndash;&gt;-->
+<!--    <section class="section" id="testimonials">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-12">-->
+<!--                    <div class="section-heading">-->
+<!--                        <h6>Digital Team</h6>-->
+<!--                        <h2>young and talented members</h2>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-12 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">-->
+<!--                    <div class="owl-carousel owl-theme">-->
+
+<!--                        <div class="item author-item">-->
+<!--                            <div class="member-thumb">-->
+<!--                                <img src="assets/images/mcgill-university-logo-png-transparent-cropped.png" alt="">-->
+<!--                                <div class="hover-effect">-->
+<!--                                    <div class="hover-content">-->
+
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <h4>.01 White Cheese</h4>-->
+<!--                            <span>Digital Marketer</span>-->
+<!--                        </div>-->
+<!--                        <div class="item author-item">-->
+<!--                            <div class="member-thumb">-->
+<!--                                <img src="assets/images/Mila_Logo_Web_Coul_RGB.png" alt="">-->
+<!--                                <div class="hover-effect">-->
+<!--                                    <div class="hover-content">-->
+
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <h4>.02 Snow Mary</h4>-->
+<!--                            <span>Site Analyst</span>-->
+<!--                        </div>-->
+<!--                        <div class="item author-item">-->
+<!--                            <div class="member-thumb">-->
+<!--                                <img src="assets/images/ucf-university-of-central-florida-logo-503B602697-seeklogo.com.png" alt="">-->
+<!--                                <div class="hover-effect">-->
+<!--                                    <div class="hover-content">-->
+<!--                                        <ul>-->
+<!--                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <h4>.03 Johnny Egg</h4>-->
+<!--                            <span>Digital Influencer</span>-->
+<!--                        </div>-->
+<!--                        <div class="item author-item">-->
+<!--                            <div class="member-thumb">-->
+<!--                                <img src="assets/images/member-item-05.jpg" alt="">-->
+<!--                                <div class="hover-effect">-->
+<!--                                    <div class="hover-content">-->
+<!--                                        <ul>-->
+<!--                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <h4>.04 Catherine Phyu</h4>-->
+<!--                            <span>Co Founder</span>-->
+<!--                        </div>-->
+<!--                        <div class="item author-item">-->
+<!--                            <div class="member-thumb">-->
+<!--                                <img src="assets/images/member-item-03.jpg" alt="">-->
+<!--                                <div class="hover-effect">-->
+<!--                                    <div class="hover-content">-->
+<!--                                        <ul>-->
+<!--                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <h4>.05 Shao Lynn</h4>-->
+<!--                            <span>Chief Marketing</span>-->
+<!--                        </div>-->
+<!--                        <div class="item author-item">-->
+<!--                            <div class="member-thumb">-->
+<!--                                <img src="assets/images/member-item-04.jpg" alt="">-->
+<!--                                <div class="hover-effect">-->
+<!--                                    <div class="hover-content">-->
+<!--                                        <ul>-->
+<!--                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <h4>.06 Emma Honey</h4>-->
+<!--                            <span>Digital Influencer</span>-->
+<!--                        </div>-->
+<!--                        <div class="item author-item">-->
+<!--                            <div class="member-thumb">-->
+<!--                                <img src="assets/images/member-item-06.jpg" alt="">-->
+<!--                                <div class="hover-effect">-->
+<!--                                    <div class="hover-content">-->
+<!--                                        <ul>-->
+<!--                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+<!--                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <h4>.07 Oliva Sofie</h4>-->
+<!--                            <span>Website Analyst</span>-->
+<!--                        </div>-->
+<!--                        -->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    &lt;!&ndash; ***** Testimonials Ends ***** &ndash;&gt;-->
+<!--    -->
+
     
     <!-- ***** Footer Start ***** -->
     <footer>
@@ -553,21 +397,16 @@ https://templatemo.com/tm-543-breezed
             <div class="row">
                 <div class="col-lg-6 col-xs-12">
                     <div class="left-text-content">
-                        <p>Copyright &copy; 2020 Breezed Co., Ltd. 
+                        <p>Copyright &copy; 2024 Future Data Lab,
                         
                         - Design: <a rel="nofollow noopener" href="https://templatemo.com">TemplateMo</a></p>
                     </div>
                 </div>
+
+
                 <div class="col-lg-6 col-xs-12">
-                    <div class="right-text-content">
-                            <ul class="social-icons">
-                                <li><p>Follow Us</p></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-twitter"></i></a></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
-                    </div>
+                    <a href="https://github.com/benjaminnNgo/ScalingTGNs/issues"> contact us</a>
+
                 </div>
             </div>
         </div>
